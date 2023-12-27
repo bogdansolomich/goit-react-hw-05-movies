@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-import { Container } from './Container';
-import { GlobalStyle } from './Globalstyle';
+import { Container } from 'components/styled/Container';
+import { GlobalStyle } from 'components/styled/Globalstyle';
 import { StyledHeader, NavList, StyledLink } from './Layout.styled';
-import { Loader } from './Loader/Loader';
+import { Loader } from 'components/Loader/Loader';
 
 export const Layout = () => {
   return (

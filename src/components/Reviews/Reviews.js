@@ -3,7 +3,7 @@ import { fetchReviewsById } from '../services/api';
 import toast, { Toaster } from 'react-hot-toast';
 import { useState, useEffect } from 'react';
 import { ReviewsListItem, ReviewsText, ReviewsTitle } from './Reviews.styled';
-import { ReviesNotification } from '../pages/HomePage.styled';
+import { ReviesNotification } from 'pages/HomePage/HomePage.styled';
 import { Loader } from 'components/Loader/Loader';
 
 const Reviews = () => {

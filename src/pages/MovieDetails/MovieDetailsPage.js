@@ -1,16 +1,16 @@
 import { MovieDetails } from 'components/MovieDetails/MovieDetails';
 import { Link, Outlet, useParams, useLocation } from 'react-router-dom';
-import { fetchMovieDetailsById } from '../services/api';
+import { fetchMovieDetailsById } from 'components/services/api';
 import { useState, useEffect, useRef, Suspense } from 'react';
 import {
   AdditionalInfoLink,
   GoBackBtn,
 } from 'components/Searchbar/Searchbar.styled';
-import { Container } from 'components/Container';
+import { Container } from 'components/styled/Container';
 import {
   AdditionalInfoSection,
   StyledSection,
-} from 'components/Section.styled';
+} from 'components/styled/Section.styled';
 import {
   AdditionalInfoListItem,
   AdditionalInfoTitle,
@@ -56,7 +56,7 @@ const MovieDetailsPage = () => {
       <StyledSection>
         <Container>
           <Link to={backLinkLocationRef.current}>
-            <GoBackBtn type="button">Go back</GoBackBtn>
+            <GoBackBtn>{'Go back'}</GoBackBtn>
           </Link>
 
           {movieInfo && <MovieDetails movieInfo={movieInfo} />}

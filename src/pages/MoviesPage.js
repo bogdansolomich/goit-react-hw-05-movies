@@ -1,11 +1,11 @@
-import { Container } from 'components/Container';
+import { Container } from 'components/styled/Container';
 import { Loader } from 'components/Loader/Loader';
 import { MoviesList } from 'components/MoviesList/MoviesList';
 import { Searchbar } from 'components/Searchbar/Searchbar';
-import { StyledSection } from 'components/Section.styled';
+import { StyledSection } from 'components/styled/Section.styled';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { fetchMoviesByQuery } from '../services/api';
+import { fetchMoviesByQuery } from 'components/services/api';
 import toast, { Toaster } from 'react-hot-toast';
 
 const MoviesPage = () => {

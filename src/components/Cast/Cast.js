@@ -9,7 +9,7 @@ import {
 } from './Cast.styled';
 import { Loader } from 'components/Loader/Loader';
 import toast, { Toaster } from 'react-hot-toast';
-import { ReviesNotification } from '../pages/HomePage.styled';
+import { ReviesNotification } from 'pages/HomePage/HomePage.styled';
 
 const defaultImg =
   'https://png.pngitem.com/pimgs/s/508-5087257_clip-art-hd-png-download.png';

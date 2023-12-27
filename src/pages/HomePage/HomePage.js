@@ -1,14 +1,14 @@
-import { Container } from 'components/Container';
+import { Container } from 'components/styled/Container';
 import { Loader } from 'components/Loader/Loader';
 import { MoviesList } from 'components/MoviesList/MoviesList';
-import { StyledSection } from 'components/Section.styled';
+import { StyledSection } from 'components/styled/Section.styled';
 import { useState, useEffect } from 'react';
 
-import { fetchTrendingMovies } from '../services/api';
+import { fetchTrendingMovies } from 'components/services/api';
 import { HomeTitle } from './HomePage.styled';
 import toast, { Toaster } from 'react-hot-toast';
 
-const HomePage = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -48,4 +48,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;
